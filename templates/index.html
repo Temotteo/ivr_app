@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Survey Builder</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Create Your Survey</h1>
+        <form id="survey-form">
+            <div id="questions-container">
+                <div class="form-group" id="question1-container">
+                    <label for="question1">Question 1</label>
+                    <input type="text" class="form-control" id="question1" name="questions[]" placeholder="Enter your question">
+                    <div class="multiple-choice-options" id="options1">
+                        <div class="form-group">
+                            <label for="option1">Option 1</label>
+                            <input type="text" class="form-control" name="options1[]" placeholder="Enter option 1">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-link" onclick="addOption(1)">Add Option</button>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary" id="add-question">Add Question</button>
+            <button type="submit" class="btn btn-primary">Submit Survey</button>
+        </form>
+
+        <!-- Display JSON output after form submission -->
+        <h3 class="mt-5">Survey Data (JSON format):</h3>
+        <pre id="json-output" style="background-color: #f4f4f4; padding: 15px;"></pre>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
