@@ -1,0 +1,35 @@
+body {
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 800px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#questions-container .form-group {
+    margin-bottom: 20px;
+}
+
+#questions-container .form-group input {
+    font-size: 16px; /* Make question text size larger */
+}
+
+#questions-container .multiple-choice-options {
+    margin-left: 20px; /* Indent options */
+}
+
+#questions-container .multiple-choice-options .form-group input {
+    font-size: 14px; /* Make options text size smaller */
+}
+
+#questions-container .multiple-choice-options .form-group {
+    margin-bottom: 10px;
+}
